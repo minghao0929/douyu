@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9F2E0F51DC9C3680084FA63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E0F41DC9C3680084FA63 /* main.m */; };
-		C9F2E0F81DC9C3680084FA63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E0F71DC9C3680084FA63 /* AppDelegate.m */; };
-		C9F2E0FB1DC9C3680084FA63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E0FA1DC9C3680084FA63 /* ViewController.m */; };
 		C9F2E0FE1DC9C3680084FA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F2E0FC1DC9C3680084FA63 /* Main.storyboard */; };
 		C9F2E1001DC9C3680084FA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F2E0FF1DC9C3680084FA63 /* Assets.xcassets */; };
 		C9F2E1031DC9C3680084FA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F2E1011DC9C3680084FA63 /* LaunchScreen.storyboard */; };
 		C9F2E10E1DC9C3680084FA63 /* douyuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E10D1DC9C3680084FA63 /* douyuTests.m */; };
 		C9F2E1191DC9C3680084FA63 /* douyuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E1181DC9C3680084FA63 /* douyuUITests.m */; };
+		C9F2E13E1DC9D10F0084FA63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E1391DC9D10F0084FA63 /* AppDelegate.m */; };
+		C9F2E13F1DC9D10F0084FA63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E13B1DC9D10F0084FA63 /* main.m */; };
+		C9F2E1421DC9D18F0084FA63 /* DYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E1411DC9D18F0084FA63 /* DYMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +36,6 @@
 
 /* Begin PBXFileReference section */
 		C9F2E0F01DC9C3680084FA63 /* douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F2E0F41DC9C3680084FA63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C9F2E0F61DC9C3680084FA63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C9F2E0F71DC9C3680084FA63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C9F2E0F91DC9C3680084FA63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C9F2E0FA1DC9C3680084FA63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C9F2E0FD1DC9C3680084FA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9F2E0FF1DC9C3680084FA63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9F2E1021DC9C3680084FA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +46,11 @@
 		C9F2E1141DC9C3680084FA63 /* douyuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = douyuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F2E1181DC9C3680084FA63 /* douyuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = douyuUITests.m; sourceTree = "<group>"; };
 		C9F2E11A1DC9C3680084FA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F2E1381DC9D10F0084FA63 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9F2E1391DC9D10F0084FA63 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9F2E13B1DC9D10F0084FA63 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9F2E1401DC9D18F0084FA63 /* DYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMainViewController.h; sourceTree = "<group>"; };
+		C9F2E1411DC9D18F0084FA63 /* DYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,7 @@
 		C9F2E0F21DC9C3680084FA63 /* douyu */ = {
 			isa = PBXGroup;
 			children = (
-				C9F2E0F61DC9C3680084FA63 /* AppDelegate.h */,
-				C9F2E0F71DC9C3680084FA63 /* AppDelegate.m */,
-				C9F2E0F91DC9C3680084FA63 /* ViewController.h */,
-				C9F2E0FA1DC9C3680084FA63 /* ViewController.m */,
+				C9F2E1261DC9D10F0084FA63 /* Classes */,
 				C9F2E0FC1DC9C3680084FA63 /* Main.storyboard */,
 				C9F2E0FF1DC9C3680084FA63 /* Assets.xcassets */,
 				C9F2E1011DC9C3680084FA63 /* LaunchScreen.storyboard */,
@@ -117,7 +114,6 @@
 		C9F2E0F31DC9C3680084FA63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9F2E0F41DC9C3680084FA63 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +134,178 @@
 				C9F2E11A1DC9C3680084FA63 /* Info.plist */,
 			);
 			path = douyuUITests;
+			sourceTree = "<group>";
+		};
+		C9F2E1261DC9D10F0084FA63 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2E12B1DC9D10F0084FA63 /* Home */,
+				C9F2E12F1DC9D10F0084FA63 /* Living */,
+				C9F2E1271DC9D10F0084FA63 /* Focus */,
+				C9F2E1331DC9D10F0084FA63 /* Mine */,
+				C9F2E1371DC9D10F0084FA63 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C9F2E1271DC9D10F0084FA63 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2E1281DC9D10F0084FA63 /* Controller */,
+				C9F2E1291DC9D10F0084FA63 /* Modle */,
+				C9F2E12A1DC9D10F0084FA63 /* View */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		C9F2E1281DC9D10F0084FA63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9F2E1291DC9D10F0084FA63 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		C9F2E12A1DC9D10F0084FA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9F2E12B1DC9D10F0084FA63 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2E12C1DC9D10F0084FA63 /* Controller */,
+				C9F2E12D1DC9D10F0084FA63 /* Modle */,
+				C9F2E12E1DC9D10F0084FA63 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C9F2E12C1DC9D10F0084FA63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2E1401DC9D18F0084FA63 /* DYMainViewController.h */,
+				C9F2E1411DC9D18F0084FA63 /* DYMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9F2E12D1DC9D10F0084FA63 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		C9F2E12E1DC9D10F0084FA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9F2E12F1DC9D10F0084FA63 /* Living */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2E1301DC9D10F0084FA63 /* Controller */,
+				C9F2E1311DC9D10F0084FA63 /* Modle */,
+				C9F2E1321DC9D10F0084FA63 /* View */,
+			);
+			path = Living;
+			sourceTree = "<group>";
+		};
+		C9F2E1301DC9D10F0084FA63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9F2E1311DC9D10F0084FA63 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		C9F2E1321DC9D10F0084FA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9F2E1331DC9D10F0084FA63 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2E1341DC9D10F0084FA63 /* Controller */,
+				C9F2E1351DC9D10F0084FA63 /* Modle */,
+				C9F2E1361DC9D10F0084FA63 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C9F2E1341DC9D10F0084FA63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9F2E1351DC9D10F0084FA63 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		C9F2E1361DC9D10F0084FA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9F2E1371DC9D10F0084FA63 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2E1381DC9D10F0084FA63 /* AppDelegate.h */,
+				C9F2E1391DC9D10F0084FA63 /* AppDelegate.m */,
+				C9F2E13A1DC9D10F0084FA63 /* Controller */,
+				C9F2E13B1DC9D10F0084FA63 /* main.m */,
+				C9F2E13C1DC9D10F0084FA63 /* Modle */,
+				C9F2E13D1DC9D10F0084FA63 /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C9F2E13A1DC9D10F0084FA63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9F2E13C1DC9D10F0084FA63 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modle;
+			sourceTree = "<group>";
+		};
+		C9F2E13D1DC9D10F0084FA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +370,7 @@
 		C9F2E0E81DC9C3680084FA63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DY;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Minghao;
 				TargetAttributes = {
@@ -276,9 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F2E0FB1DC9C3680084FA63 /* ViewController.m in Sources */,
-				C9F2E0F81DC9C3680084FA63 /* AppDelegate.m in Sources */,
-				C9F2E0F51DC9C3680084FA63 /* main.m in Sources */,
+				C9F2E1421DC9D18F0084FA63 /* DYMainViewController.m in Sources */,
+				C9F2E13F1DC9D10F0084FA63 /* main.m in Sources */,
+				C9F2E13E1DC9D10F0084FA63 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
