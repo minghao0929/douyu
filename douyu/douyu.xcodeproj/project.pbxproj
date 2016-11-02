@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9F2E0FE1DC9C3680084FA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F2E0FC1DC9C3680084FA63 /* Main.storyboard */; };
 		C9F2E1001DC9C3680084FA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F2E0FF1DC9C3680084FA63 /* Assets.xcassets */; };
 		C9F2E1031DC9C3680084FA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F2E1011DC9C3680084FA63 /* LaunchScreen.storyboard */; };
 		C9F2E10E1DC9C3680084FA63 /* douyuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E10D1DC9C3680084FA63 /* douyuTests.m */; };
@@ -15,6 +14,11 @@
 		C9F2E13E1DC9D10F0084FA63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E1391DC9D10F0084FA63 /* AppDelegate.m */; };
 		C9F2E13F1DC9D10F0084FA63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E13B1DC9D10F0084FA63 /* main.m */; };
 		C9F2E1421DC9D18F0084FA63 /* DYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E1411DC9D18F0084FA63 /* DYMainViewController.m */; };
+		C9F2E1451DC9D41A0084FA63 /* DYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E1441DC9D41A0084FA63 /* DYTabBarController.m */; };
+		C9F2E1481DC9D5A70084FA63 /* DYLivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E1471DC9D5A70084FA63 /* DYLivingViewController.m */; };
+		C9F2E14B1DC9D5DA0084FA63 /* DYFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E14A1DC9D5DA0084FA63 /* DYFocusViewController.m */; };
+		C9F2E14E1DC9D60A0084FA63 /* DYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F2E14D1DC9D60A0084FA63 /* DYMineViewController.m */; };
+		C9F2E1501DC9E00C0084FA63 /* DYMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F2E14F1DC9E00C0084FA63 /* DYMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		C9F2E0F01DC9C3680084FA63 /* douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F2E0FD1DC9C3680084FA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9F2E0FF1DC9C3680084FA63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9F2E1021DC9C3680084FA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9F2E1041DC9C3680084FA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +54,15 @@
 		C9F2E13B1DC9D10F0084FA63 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9F2E1401DC9D18F0084FA63 /* DYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMainViewController.h; sourceTree = "<group>"; };
 		C9F2E1411DC9D18F0084FA63 /* DYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYMainViewController.m; sourceTree = "<group>"; };
+		C9F2E1431DC9D41A0084FA63 /* DYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTabBarController.h; sourceTree = "<group>"; };
+		C9F2E1441DC9D41A0084FA63 /* DYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTabBarController.m; sourceTree = "<group>"; };
+		C9F2E1461DC9D5A70084FA63 /* DYLivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLivingViewController.h; sourceTree = "<group>"; };
+		C9F2E1471DC9D5A70084FA63 /* DYLivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLivingViewController.m; sourceTree = "<group>"; };
+		C9F2E1491DC9D5DA0084FA63 /* DYFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYFocusViewController.h; sourceTree = "<group>"; };
+		C9F2E14A1DC9D5DA0084FA63 /* DYFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYFocusViewController.m; sourceTree = "<group>"; };
+		C9F2E14C1DC9D60A0084FA63 /* DYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMineViewController.h; sourceTree = "<group>"; };
+		C9F2E14D1DC9D60A0084FA63 /* DYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYMineViewController.m; sourceTree = "<group>"; };
+		C9F2E14F1DC9E00C0084FA63 /* DYMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				C9F2E1261DC9D10F0084FA63 /* Classes */,
-				C9F2E0FC1DC9C3680084FA63 /* Main.storyboard */,
 				C9F2E0FF1DC9C3680084FA63 /* Assets.xcassets */,
 				C9F2E1011DC9C3680084FA63 /* LaunchScreen.storyboard */,
 				C9F2E1041DC9C3680084FA63 /* Info.plist */,
@@ -161,6 +172,8 @@
 		C9F2E1281DC9D10F0084FA63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C9F2E1491DC9D5DA0084FA63 /* DYFocusViewController.h */,
+				C9F2E14A1DC9D5DA0084FA63 /* DYFocusViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +207,7 @@
 			children = (
 				C9F2E1401DC9D18F0084FA63 /* DYMainViewController.h */,
 				C9F2E1411DC9D18F0084FA63 /* DYMainViewController.m */,
+				C9F2E14F1DC9E00C0084FA63 /* DYMainViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +239,8 @@
 		C9F2E1301DC9D10F0084FA63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C9F2E1461DC9D5A70084FA63 /* DYLivingViewController.h */,
+				C9F2E1471DC9D5A70084FA63 /* DYLivingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,6 +272,8 @@
 		C9F2E1341DC9D10F0084FA63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C9F2E14C1DC9D60A0084FA63 /* DYMineViewController.h */,
+				C9F2E14D1DC9D60A0084FA63 /* DYMineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,12 +295,12 @@
 		C9F2E1371DC9D10F0084FA63 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				C9F2E1381DC9D10F0084FA63 /* AppDelegate.h */,
-				C9F2E1391DC9D10F0084FA63 /* AppDelegate.m */,
 				C9F2E13A1DC9D10F0084FA63 /* Controller */,
-				C9F2E13B1DC9D10F0084FA63 /* main.m */,
 				C9F2E13C1DC9D10F0084FA63 /* Modle */,
 				C9F2E13D1DC9D10F0084FA63 /* View */,
+				C9F2E1381DC9D10F0084FA63 /* AppDelegate.h */,
+				C9F2E1391DC9D10F0084FA63 /* AppDelegate.m */,
+				C9F2E13B1DC9D10F0084FA63 /* main.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -290,6 +308,8 @@
 		C9F2E13A1DC9D10F0084FA63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C9F2E1431DC9D41A0084FA63 /* DYTabBarController.h */,
+				C9F2E1441DC9D41A0084FA63 /* DYTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -418,9 +438,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F2E1501DC9E00C0084FA63 /* DYMainViewController.xib in Resources */,
 				C9F2E1031DC9C3680084FA63 /* LaunchScreen.storyboard in Resources */,
 				C9F2E1001DC9C3680084FA63 /* Assets.xcassets in Resources */,
-				C9F2E0FE1DC9C3680084FA63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,8 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F2E1481DC9D5A70084FA63 /* DYLivingViewController.m in Sources */,
+				C9F2E14E1DC9D60A0084FA63 /* DYMineViewController.m in Sources */,
+				C9F2E1451DC9D41A0084FA63 /* DYTabBarController.m in Sources */,
 				C9F2E1421DC9D18F0084FA63 /* DYMainViewController.m in Sources */,
 				C9F2E13F1DC9D10F0084FA63 /* main.m in Sources */,
+				C9F2E14B1DC9D5DA0084FA63 /* DYFocusViewController.m in Sources */,
 				C9F2E13E1DC9D10F0084FA63 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,14 +507,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C9F2E0FC1DC9C3680084FA63 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9F2E0FD1DC9C3680084FA63 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9F2E1011DC9C3680084FA63 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
