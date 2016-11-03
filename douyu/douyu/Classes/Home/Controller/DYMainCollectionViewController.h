@@ -1,8 +1,8 @@
 //
-//  DYMainTableViewController.h
+//  DYMainCollectionViewController.h
 //  douyu
 //
-//  Created by Minghao on 16/11/2.
+//  Created by Minghao on 16/11/3.
 //  Copyright © 2016年 Minghao. All rights reserved.
 //
 
@@ -17,9 +17,6 @@ typedef enum{
     
 } DYMainTableViewType;
 
-@interface DYMainTableViewController : UITableViewController
-
-/** table的类型 **/
-@property (assign, nonatomic) DYMainTableViewType type;
+@interface DYMainCollectionViewController : UICollectionViewController
 
 @end

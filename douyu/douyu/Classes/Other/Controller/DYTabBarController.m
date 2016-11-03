@@ -11,6 +11,7 @@
 #import "DYLivingViewController.h"
 #import "DYFocusViewController.h"
 #import "DYMineViewController.h"
+#import "DYNavigationController.h"
 
 @interface DYTabBarController ()
 
@@ -62,12 +63,22 @@
     // 设置image
     vc.tabBarItem.image = [UIImage imageNamed:image];
     
+    
     //    // 图片渲染设置
     //    selectedImage = [selectedImage02 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
-    [self addChildViewController:vc];
+    if ([vc isKindOfClass:[DYMineViewController class]]) {
+        
+        [self addChildViewController:vc];
+    }else{
+        
+        DYNavigationController *nav = [[DYNavigationController alloc]initWithRootViewController:vc];
+
+        [self addChildViewController:nav];
+    }
+    
 }
 
 @end

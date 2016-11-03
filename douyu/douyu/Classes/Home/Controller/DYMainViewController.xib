@@ -4,18 +4,13 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYMainViewController">
             <connections>
-                <outlet property="amusing" destination="TSB-at-C72" id="qYj-Wx-fS6"/>
-                <outlet property="contentScrollView" destination="OLg-kW-rSL" id="5wU-tf-Ajp"/>
-                <outlet property="game" destination="rLo-zI-1Dv" id="zdi-Gv-AIa"/>
-                <outlet property="recommend" destination="r6a-pF-xiG" id="2LM-XO-o4b"/>
-                <outlet property="recreation" destination="Frl-xt-oiK" id="WF3-n5-2dZ"/>
+                <outlet property="contentScrollView" destination="Cuo-u1-ngi" id="dyO-Eg-Oup"/>
                 <outlet property="tagView" destination="ryF-cx-9Dm" id="d4R-CG-eTu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="W4s-Kd-pRI"/>
             </connections>
@@ -25,134 +20,39 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gq8-ax-Go9" userLabel="导航栏">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-Wj-EBx" userLabel="contentView">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZy-Xd-GFL">
-                            <rect key="frame" x="10" y="9" width="62" height="26"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryF-cx-9Dm" userLabel="标签栏">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="62" id="35i-pM-p00"/>
-                                <constraint firstAttribute="height" constant="26" id="bx5-rg-saL"/>
+                                <constraint firstAttribute="height" constant="44" id="kLU-VQ-78b"/>
                             </constraints>
-                            <state key="normal" backgroundImage="homeLogoIcon"/>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="lZy-Xd-GFL" firstAttribute="centerY" secondItem="Gq8-ax-Go9" secondAttribute="centerY" id="K1j-Ta-qad"/>
-                        <constraint firstAttribute="height" constant="44" id="VFA-PS-aUT"/>
-                        <constraint firstItem="lZy-Xd-GFL" firstAttribute="leading" secondItem="Gq8-ax-Go9" secondAttribute="leading" constant="10" id="kP7-ca-5V8"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryF-cx-9Dm" userLabel="标签栏">
-                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6a-pF-xiG" customClass="DYtagButton">
-                            <rect key="frame" x="0.0" y="0.0" width="75" height="44"/>
-                            <state key="normal" title="推荐">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="tagBtnClick:" destination="-1" eventType="touchUpInside" id="5aj-3Z-Qqz"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLo-zI-1Dv" customClass="DYtagButton">
-                            <rect key="frame" x="75" y="0.0" width="75" height="44"/>
-                            <state key="normal" title="游戏">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="tagBtnClick:" destination="-1" eventType="touchUpInside" id="PLp-Wr-m3s"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkR-8X-Fsn" userLabel="Recreation" customClass="DYtagButton">
-                            <rect key="frame" x="150" y="0.0" width="75" height="44"/>
-                            <state key="normal" title="娱乐">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="tagBtnClick:" destination="-1" eventType="touchUpInside" id="i3x-65-xoD"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-xt-oiK" userLabel="Mobile game" customClass="DYtagButton">
-                            <rect key="frame" x="225" y="0.0" width="75" height="44"/>
-                            <state key="normal" title="手游">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="tagBtnClick:" destination="-1" eventType="touchUpInside" id="XLf-Dp-aHS"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSB-at-C72" customClass="DYtagButton">
-                            <rect key="frame" x="300" y="0.0" width="75" height="44"/>
-                            <state key="normal" title="趣玩">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="tagBtnClick:" destination="-1" eventType="touchUpInside" id="JMd-UI-2l5"/>
-                            </connections>
-                        </button>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuo-u1-ngi">
+                            <rect key="frame" x="0.0" y="44" width="375" height="559"/>
+                        </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="r6a-pF-xiG" firstAttribute="leading" secondItem="ryF-cx-9Dm" secondAttribute="leading" id="0kn-aF-PSv"/>
-                        <constraint firstItem="Frl-xt-oiK" firstAttribute="leading" secondItem="kkR-8X-Fsn" secondAttribute="trailing" id="5Oy-YU-zKz"/>
-                        <constraint firstItem="r6a-pF-xiG" firstAttribute="top" secondItem="ryF-cx-9Dm" secondAttribute="top" id="7lV-mH-TfO"/>
-                        <constraint firstItem="kkR-8X-Fsn" firstAttribute="top" secondItem="ryF-cx-9Dm" secondAttribute="top" id="B7N-EG-1gW"/>
-                        <constraint firstAttribute="bottom" secondItem="rLo-zI-1Dv" secondAttribute="bottom" id="Bmn-jU-e2U"/>
-                        <constraint firstItem="Frl-xt-oiK" firstAttribute="top" secondItem="ryF-cx-9Dm" secondAttribute="top" id="CsQ-aH-bey"/>
-                        <constraint firstItem="Frl-xt-oiK" firstAttribute="width" secondItem="rLo-zI-1Dv" secondAttribute="width" id="DSQ-Th-BpO"/>
-                        <constraint firstItem="rLo-zI-1Dv" firstAttribute="top" secondItem="ryF-cx-9Dm" secondAttribute="top" id="Don-XS-H2E"/>
-                        <constraint firstAttribute="height" constant="44" id="L1t-bg-dX3"/>
-                        <constraint firstAttribute="trailing" secondItem="TSB-at-C72" secondAttribute="trailing" id="L8h-a8-IXH"/>
-                        <constraint firstItem="kkR-8X-Fsn" firstAttribute="width" secondItem="rLo-zI-1Dv" secondAttribute="width" id="MCR-EW-TVX"/>
-                        <constraint firstItem="rLo-zI-1Dv" firstAttribute="leading" secondItem="r6a-pF-xiG" secondAttribute="trailing" id="MRl-HB-IG7"/>
-                        <constraint firstAttribute="bottom" secondItem="Frl-xt-oiK" secondAttribute="bottom" id="Ma2-lP-g4W"/>
-                        <constraint firstItem="TSB-at-C72" firstAttribute="width" secondItem="Frl-xt-oiK" secondAttribute="width" id="Myb-1Q-Dtq"/>
-                        <constraint firstAttribute="bottom" secondItem="r6a-pF-xiG" secondAttribute="bottom" id="NnN-xf-Usm"/>
-                        <constraint firstItem="r6a-pF-xiG" firstAttribute="width" secondItem="rLo-zI-1Dv" secondAttribute="width" id="heL-dh-8bn"/>
-                        <constraint firstAttribute="bottom" secondItem="TSB-at-C72" secondAttribute="bottom" id="oRC-sQ-eSd"/>
-                        <constraint firstAttribute="bottom" secondItem="kkR-8X-Fsn" secondAttribute="bottom" id="pGS-Nh-Qkk"/>
-                        <constraint firstItem="TSB-at-C72" firstAttribute="top" secondItem="ryF-cx-9Dm" secondAttribute="top" id="tpE-lZ-W36"/>
-                        <constraint firstItem="TSB-at-C72" firstAttribute="leading" secondItem="Frl-xt-oiK" secondAttribute="trailing" id="uDu-ZB-fky"/>
-                        <constraint firstItem="kkR-8X-Fsn" firstAttribute="leading" secondItem="rLo-zI-1Dv" secondAttribute="trailing" id="wqX-Ln-DGd"/>
+                        <constraint firstAttribute="trailing" secondItem="ryF-cx-9Dm" secondAttribute="trailing" id="4Vk-Se-2EV"/>
+                        <constraint firstItem="Cuo-u1-ngi" firstAttribute="leading" secondItem="UwD-Wj-EBx" secondAttribute="leading" id="EKp-Fd-6TX"/>
+                        <constraint firstItem="ryF-cx-9Dm" firstAttribute="top" secondItem="UwD-Wj-EBx" secondAttribute="top" id="FJL-b0-IW0"/>
+                        <constraint firstItem="ryF-cx-9Dm" firstAttribute="leading" secondItem="UwD-Wj-EBx" secondAttribute="leading" id="FVy-w5-bjk"/>
+                        <constraint firstItem="Cuo-u1-ngi" firstAttribute="top" secondItem="ryF-cx-9Dm" secondAttribute="bottom" id="MGY-SV-FKR"/>
+                        <constraint firstAttribute="bottom" secondItem="Cuo-u1-ngi" secondAttribute="bottom" id="nhq-OE-GkH"/>
+                        <constraint firstAttribute="trailing" secondItem="Cuo-u1-ngi" secondAttribute="trailing" id="w2J-1j-g1O"/>
                     </constraints>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLg-kW-rSL">
-                    <rect key="frame" x="0.0" y="108" width="375" height="559"/>
-                </scrollView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="ryF-cx-9Dm" secondAttribute="trailing" id="2E8-Bs-GnQ"/>
-                <constraint firstItem="ryF-cx-9Dm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8F1-Y9-qIT"/>
-                <constraint firstAttribute="trailing" secondItem="OLg-kW-rSL" secondAttribute="trailing" id="EcS-UN-yau"/>
-                <constraint firstItem="Gq8-ax-Go9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ICS-yx-qhS"/>
-                <constraint firstItem="OLg-kW-rSL" firstAttribute="top" secondItem="ryF-cx-9Dm" secondAttribute="bottom" id="JaY-Ko-x6Z"/>
-                <constraint firstItem="OLg-kW-rSL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hZ3-Sw-uYY"/>
-                <constraint firstAttribute="trailing" secondItem="Gq8-ax-Go9" secondAttribute="trailing" id="ims-Z3-ciy"/>
-                <constraint firstAttribute="bottom" secondItem="OLg-kW-rSL" secondAttribute="bottom" id="rp8-Sm-JfW"/>
-                <constraint firstItem="Gq8-ax-Go9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="thd-G1-eC2"/>
-                <constraint firstItem="ryF-cx-9Dm" firstAttribute="top" secondItem="Gq8-ax-Go9" secondAttribute="bottom" id="wbu-BQ-Nue"/>
+                <constraint firstAttribute="trailing" secondItem="UwD-Wj-EBx" secondAttribute="trailing" id="6l2-wm-OZb"/>
+                <constraint firstAttribute="bottom" secondItem="UwD-Wj-EBx" secondAttribute="bottom" id="Bnf-JF-172"/>
+                <constraint firstItem="UwD-Wj-EBx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="THE-jh-Xsp"/>
+                <constraint firstItem="UwD-Wj-EBx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oxl-i0-6gm"/>
             </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="homeLogoIcon" width="62" height="26"/>
-    </resources>
 </document>
